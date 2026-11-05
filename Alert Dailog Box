@@ -1,0 +1,8 @@
+ new AlertDialog.Builder(ParkingOut_Screen.this)
+                                .setTitle("Vehicle Not Found")
+                                .setMessage("Vehicle not found for scanned tags.\n\nPlease re-scan the tag again.")
+                                .setCancelable(false)
+                                .setPositiveButton("OK", (dialog, which) -> {
+                                    dialog.dismiss();
+                                })
+                                .show();
